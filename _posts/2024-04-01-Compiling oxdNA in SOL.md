@@ -32,12 +32,26 @@ Ctrl+b, 0 (switch )
 Ctrl+b, c (Create new window)
 Ctrl+attach (Go to tmux)
 
-- Go back to the location where oxDNA is installed inside the tmux session, mkdir `build` and run `cmake .. -DCMAKE_BUILD_TYPE=Release`, then make `j8` to use 8 CPU for compilation
+- Go back to the location where oxDNA is installed inside the tmux session, mkdir `build` and run `cmake .. -DCMAKE_BUILD_TYPE=Release`, then type `j8` to use 8 CPU for compilation
 
 - Check `bin` to make sure oxdna folder is added to PATH, use `vim ~/.bashrc` to check the folder
 It should have the `$PATH:/home/ddeeksha/Software:/home/ddeeksha/github/oxDNA/build/bin`
 
-- Go back to `scratch/ddeeksha/` and prepare a folder to store all jobs `Simulation`, `xyz`
+- Go back to `scratch/ddeeksha/` and prepare a folder to store all jobs such as mkdir `Simulation`
+
+#Transfer folder to sol#
+
+- `sol send filename /scratch/ddeeksha`
+- Should contain three files namely:
+input (runs )
+oxDNA2_sequence_dependent_parameters
+submit.sh
+inputMC
+inputProd
+
+- MC and Pro
+
+
 
 
 
