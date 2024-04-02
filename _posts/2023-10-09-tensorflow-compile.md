@@ -3,7 +3,7 @@ layout: post
 title: Compiling oxDNA in SOL
 date: 2024-04-01 00:00:00
 description: Compiling oxDNA in SOL step-by-step 
-tags: linux
+tags: xyz
 categories: sample-posts
 giscus_comments: true
 featured: true
