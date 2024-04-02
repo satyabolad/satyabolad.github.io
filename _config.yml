@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Subhajit
+first_name: Deeksha
 middle_name:
-last_name: Roy
-email: me.subhajitroy1999@gmail.com
+last_name: Satyabola
+email: satyabolad@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   I am a PhD student at Petr Sulc's Lab, Arizona State University. I am currently persuing computational biophysics with focus on self assembly of genetic materials. I am highly invested in developing coarse grain model of DNA which would allow us to study these assembly at a much quicker pace, otherwise impossible with atomistic approach. I also work with Machine Learning models that could even simplify our life by predicting desired properties without even going through computationally intensive simulations where ever possible. I undertook other application based project like dna cryptography and storage.
 footer_text: >
