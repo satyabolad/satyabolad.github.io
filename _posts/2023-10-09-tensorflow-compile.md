@@ -1,23 +1,29 @@
 ---
 layout: post
-title: Compiling tensorflow natively
-date: 2023-10-09 00:00:00
-description: Compiling tensorflow natively for better performance and avx support.
-tags: compilation tensorflow ml fun
+title: Compiling oxDNA in SOL
+date: 2024-04-01 00:00:00
+description: Compiling oxDNA in SOL step-by-step 
+tags: linux
 categories: sample-posts
 giscus_comments: true
 featured: true
 ---
 
-Below is a brief procedure to compile tensorflow with avx, tensorRT and cuda support.
+Below is a brief procedure to compile oxDNA in SOL 
 
-1. Clone the tensorflow repo
-```bash
-git clone https://github.com/tensorflow/tensorflow.git
-git checkout branch # not necessary but you can choose a stable branch
-```
+1. Clone git repo from `https://github.com/Subhajit-Roy-Partho/oxDNA.git`
 
-2. Download tar file of cuDNN and TensorRT. Extract and paste to a suitable location. cuDNN can be pasted inside `/usr/local/cuda/bin` and `/usr/local/cuda/include` and maybe TensorRT to `/usr/local`.
+2. Create `empty.sh` and paste 
+```#!/bin/sh
+#SBATCH -q private
+#SBATCH -p general
+#SBATCH -G a100:1
+#SBATCH -t 5-00:00
+#SBATCH -c 8
+#SBATCH -o code.out
+#SBATCH -e code.err
+#SBATCH -W
+exec screen -Dm -S slurm$SLURM_JOB_ID```
 
 3. Follow the configuration steps, it is trivial except for a place where it asks for path of header file it can't find. Add all of them seperated by comma for my case it was `/usr/local/cuda/include,/usr/local/cuda/lib64,/usr/local/cuda/nvvm/lib64,/usr/local/cuda/bin,/usr/,/usr/local/TensorRT-8.6.1.6`.
 
