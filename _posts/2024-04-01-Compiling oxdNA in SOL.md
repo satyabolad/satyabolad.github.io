@@ -79,7 +79,7 @@ inputProd (final inpurProd file)
 
 ### Conclusion
 
-
+The above process helps to run a simulation using SOL (https://asurc.atlassian.net/wiki/spaces/RC/pages/1640103978/Sol+Supercomputer) and utilizing tmux to be able to run multiple jobs.
 
 ### References
 
