@@ -52,12 +52,12 @@ It should have the `$PATH:/home/ddeeksha/Software:/home/ddeeksha/github/oxDNA/bu
 - To send a folder or file into sol `sol send filename /scratch/ddeeksha`
 
 - oxDNA requires three files to run:
-```
-`input` (input to MD)
-`oxDNA2_sequence_dependent_parameters` (oxDNA parameters)
-`submit.sh` (running script)
-`inputMC` (input)
-`inputProd` (final inpurProd file)
+```bash
+input(input to MD)
+oxDNA2_sequence_dependent_parameters (oxDNA parameters)
+submit.sh (running script)
+inputMC (input)
+inputProd (final inpurProd file)
 ```
 
 ### Running a Simulation 
