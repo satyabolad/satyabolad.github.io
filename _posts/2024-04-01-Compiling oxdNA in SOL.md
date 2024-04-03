@@ -13,7 +13,7 @@ Below is a brief procedure to compile oxDNA in SOL
 
 - Go to home, create folder `github`, Clone git repo for oxDNA from `https://github.com/Subhajit-Roy-Partho/oxDNA.git`
 
-# Using tmux to run jobs #
+### Using tmux to run jobs 
 
 - Create `empty.sh` and paste 
 ```bash
@@ -38,7 +38,7 @@ Ctrl+attach (Go to tmux)
 tmux attach (go inside tmux session)
 Ctrl+b, d (Get out of tmux session)
 
-# Compile oxDNA #
+### Compile oxDNA 
 
 - Go back to the location where oxDNA is installed inside the tmux session, mkdir `build` and run `cmake .. -DCMAKE_BUILD_TYPE=Release`, then type `j8` to use 8 CPU for compilation
 
@@ -47,7 +47,7 @@ It should have the `$PATH:/home/ddeeksha/Software:/home/ddeeksha/github/oxDNA/bu
 
 - Go back to `scratch/ddeeksha/` and prepare a folder to store all jobs such as mkdir `Simulation`
 
-# Transfer folder to sol #
+### Transfer folder to sol 
 
 - To send a folder or file into sol `sol send filename /scratch/ddeeksha`
 
@@ -58,19 +58,19 @@ It should have the `$PATH:/home/ddeeksha/Software:/home/ddeeksha/github/oxDNA/bu
 `inputMC` (input)
 `inputProd` (final inpurProd file)
 
-# Running a Simulation #
+### Running a Simulation 
 
 - Use to run simulation `oxDNA inputMC; oxDNA input, oxDNA inputProd`
 
-# To get RMSF mean #
+### To get RMSF mean 
 
 - Use command `oat mean -p 20 -o mean.dat -d rmsf.json trajectory.dat`
 
-# To get backbone strength #
+### To get backbone strength 
 
 - Use command `oat backbone_flexibility -o out.json -d flex.dat input.top trajectoryProd.dat`
 
-# Miscellaneous #
+### Miscellaneous
 
 - To check all jobs `myjobs`
 - To kill a a job `scancel jobID`
